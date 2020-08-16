@@ -124,13 +124,13 @@ gameState = PLAY;
   trex.changeAnimation("running",trex_running);
   obstaclesGroup.destroyEach();
     cloudsGroup.destroyEach();
-  score = 0;
+ 
   
   if(localStorage["HighestScore"]<score){
     localStorage["HighestScore]=score;
                  }
                  console.log(localStorage["HighestScore"]);
-  
+  score = 0; 
 }
 
 function spawnClouds() {
