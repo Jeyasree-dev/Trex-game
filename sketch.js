@@ -126,6 +126,11 @@ gameState = PLAY;
     cloudsGroup.destroyEach();
   score = 0;
   
+  if(localStorage["HighestScore"]<score){
+    localStorage["HighestScore]=score;
+                 }
+                 console.log(localStorage["HighestScore"]);
+  
 }
 
 function spawnClouds() {
